@@ -1,0 +1,37 @@
+@mixin mobile {
+  @media (max-width: $max_width_mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $max_width_tablet) {
+    @content;
+  }
+}
+
+@mixin hovers {
+  @media (min-width: $no_mobile_width) {
+    @content;
+  }
+}
+
+@mixin ul_reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin input_placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}

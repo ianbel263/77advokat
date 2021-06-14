@@ -1,0 +1,49 @@
+// color scheme
+$black: #000000;
+$white: #ffffff;
+$coral: #fe7865;
+$orange: #f17d4b;
+$dark: #141517;
+$gray: #2c2e3f;
+$gray-light: #dadada;
+$gray-footer: #d7d9df;
+$brown: #48494d;
+$background: #fbf8f8;
+
+$input_border_color: rgba(44, 46, 63, 0.3);
+$input_border_color_invalid: $coral;
+$control-cross-color: rgba(20, 21, 23, 0.2);
+$control-cross-color-hover: rgba(20, 21, 23, 0.6);
+$button_not_selected_bg_color: rgba(44, 46, 63, 0.07);
+
+$img_load_error_color: $gray-light;
+$modal_img_load_error_color: #dbe8ed;
+
+// fonts
+$main-font: "Montserrat", "Arial", sans-serif;
+$author_name_font: "Poppins", "Arial", sans-serif;
+
+// another
+$transition: all 0.3s;
+$opacity: 0.87;
+$box-shadow: 0 4px 30px rgba(41, 54, 66, 0.1);
+
+// Значения ширины контента
+
+$max_width: 1920px;
+$max_width_desktop: 1200px;
+$only_desktop: 1024px;
+$max_width_tablet: 1023px;
+$min_width_mobile: 320px;
+$max_width_mobile: 767px;
+$no_mobile_width: 768px;
+
+
+// Значения вьюпортов
+$width_viewport_desktop: 1024px;
+$width_viewport_tablet: 1023px;
+$width_viewport_mobile: 767px;
+
+// Ретинизация
+$retina_dpi: 144dpi;
+$retina_dppx: 1.5dppx;
