@@ -13,6 +13,10 @@ var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore")
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
+var htmlnano = require('gulp-htmlnano');
+var htmlnanoOptions = {
+    removeComments: true
+};
 var del = require("del");
 var concat = require("gulp-concat");
 var uglify = require("gulp-uglify");
@@ -93,6 +97,7 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
+    .pipe(htmlnano(htmlnanoOptions))
     .pipe(gulp.dest("build"));
 });
 

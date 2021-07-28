@@ -1,7 +1,7 @@
 {
-  "name": "way",
+  "name": "77advokat",
   "version": "1.0.0",
-  "description": "Интернет портал - Путешествие по Европе (для студентов интенсива по JS 1 HTML Academy)",
+  "description": "Сайт адвоката Беляева А.И.",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
@@ -11,6 +11,7 @@
     "gulp": "4.0.x",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.1",
+    "gulp-htmlnano": "^0.1.0",
     "gulp-imagemin": "^5.0.3",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
