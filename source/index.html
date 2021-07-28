@@ -13,22 +13,134 @@
 <body>
   <div class="wrapper">
     <div class="wrapper__content">
-      <header class="page-header">
-        <div class="container">
-          <h2>Хедер</h2>
-        </div>
-      </header>
+      <div class="top-wrap">
+        <header class="page-header">
+          <ul class="page-header__top contacts">
+            <li class="contacts__item">
+              <p class="contacts__text">г.Москва, Рублевское шоссе, дом 12, корпус 1</p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__text">пн-пт с 10:00 до 18:00 только по предварительной записи</p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__text contacts__text--phone">
+                <a href="mailto:mail@77advokat.ru" title="Написать мне письмо">mail@77advokat.ru</a>
+              </p>
+              <p class="contacts__text contacts__text--mail">
+                <a href="tel:+79269959990" title="Позвонить мне">+7(926)995-99-90</a>
+              </p>
+            </li>
+          </ul>
+          <div class="page-header__bottom">
+            <div class="page-header__logo logo">
+              <img width="243" height="54" src="img/logo.svg" alt="Лого">
+            </div>
+            <nav class="page-header__menu menu">
+              <ul class="menu__list">
+                <li class="menu__item"><a href="#">Услуги</a></li>
+                <li class="menu__item"><a href="#">Об адвокате</a></li>
+                <li class="menu__item"><a href="#">Контакты</a></li>
+                <li class="menu__item"><a href="#">Запись на прием</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <section class="main-screen">
+          <h1 class="main-screen__text main-screen__text--name">Беляев Андрей Ильич</h1>
+          <p class="main-screen__text main-screen__text--advokat">Адвокат</p>
+          <p class="main-screen__text main-screen__text--desc">Более 16 лет успешной практики</p>
+          <p class="main-screen__text main-screen__text--desc">Рег.номер в реестре 50/4844</p>
+          <button class="main-screen__btn btn">Записаться</button>
+          <div class="main-screen__img">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x"> -->
+              <source media="(max-width: 768px)" srcset="img/photo_m_1.png 1x, img/photo_m_1@2x.png 2x">
+              <img width="562" height="740" src="img/photo_1.png" srcset="img/photo_1@2x.png 2x" alt="Фотография адвоката Беляева А.И.">
+            </picture>
+          </div>
+        </section>
+      </div>
       <main>
-
-        <h1>Стартовый шаблон</h1>
-
+        <section class="features">
+          <h2 class="visually-hidden">Мои преимущества</h2>
+          <ul class="features__list">
+            <li class="features__item">Опыт и репутация</li>
+            <li class="features__item">Юридические гарантии</li>
+            <li class="features__item">Финансовые гарантии</li>
+          </ul>
+        </section>
+        <section class="services">
+          <h2 class="services__heading">Виды юридическое помощи, которые Вы можете получить:</h2>
+          <ul class="services__list">
+            <li class="services__item">Юридические консультации</li>
+            <li class="services__item">Судебная защита</li>
+            <li class="services__item">Защита по уголовным делам</li>
+            <li class="services__item">Исследование материалов дела</li>
+            <li class="services__item">Подготовка процессуальных документов</li>
+            <li class="services__item">Разработка проектов договоров</li>
+            <li class="services__item">Юридическое сопровождение бизнеса</li>
+          </ul>
+        </section>
+        <section class="about">
+          <h2 class="about__heading">Обо мне:</h2>
+          <p class="about__name">Беляев Андрей Ильич</p>
+          <ul class="about__list">
+            <li class="about__item">В 2001 году закончил прокурорско-следственный факультет Военного университета Министерства обороны РФ</li>
+            <li class="about__item">В январе 2005 года присвоен статус адвоката</li>
+            <li class="about__item">Являюсь членом Адвокатской палаты Московской области</li>
+            <li class="about__item">На данный момент осуществляю свою деятельность в Московской коллегии адвокатов «Истомина и партнёры»</li>
+          </ul>
+        </section>
+        <section class="contacts-block">
+          <div class="contacts-block__desc">
+            <h2 class="contacts-block__heading">Контакты:</h2>
+            <ul class="contacts-block__list">
+              <li class="contacts-block__item"><address><b>Адрес:</b> Москва, Рублевское шоссе, дом 12, корпус 1</address></li>
+              <li class="contacts-block__item"><b>Время работы:</b> Ежедневно с 09:00 до 21:00</li>
+              <li class="contacts-block__item"><b>Телефон:</b> +7 (926) 995-99-90</li>
+              <li class="contacts-block__item"><b>Email:</b> mail@77advokat.ru</li>
+            </ul>
+            <p class="contacts-block__text">Прием в офисе только по предварительной записи!</p>
+          </div>
+          <div class="contacts-block__map">
+            <!-- <iframe src="" frameborder="0"></iframe> -->
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x"> -->
+              <!-- <source media="(max-width: 768px)" srcset="img/photo_m_1.png 1x, img/photo_m_1@2x.png 2x">
+              <img width="562" height="740" src="img/photo_1.png" srcset="img/photo_1@2x.png 2x" alt="Фотография адвоката Беляева А.И."> -->
+            </picture>
+          </div>
+        </section>
       </main>
     </div>
     <footer class="page-footer wrapper__footer">
-      <h2>Футер</h2>
+      <div class="page-footer__top">
+        <div class="page-footer__logo logo">
+          <img width="243" height="54" src="img/logo.svg" alt="Лого">
+        </div>
+        <nav class="page-footer__menu menu menu--footer">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="#">Услуги</a></li>
+            <li class="menu__item"><a href="#">Об адвокате</a></li>
+            <li class="menu__item"><a href="#">Контакты</a></li>
+            <li class="menu__item"><a href="#">Запись на прием</a></li>
+          </ul>
+        </nav>
+        <div class="social">
+          <h3 class="social__heading">Найди меня в соц. сетях</h3>
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#"></a>
+            </li>
+            <li class="social__item">
+              <a href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">&copy; 2005-2021 Адвокат Беляев Андрей Ильич</div>
     </footer>
   </div>
   <script src="js/main.js"></script>
 </body>
-
 </html>
