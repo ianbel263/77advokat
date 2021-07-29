@@ -11,8 +11,21 @@
 @import "./general/scaffolding";
 
 // components
+@import "./components/button";
+@import "./components/heading";
+@import "./components/contacts";
+@import "./components/menu";
+@import "./components/social";
+@import "./components/copyright";
 
 // blocks
 @import "./blocks/wrapper";
 @import "./blocks/container";
+@import "./blocks/top-wrap";
 @import "./blocks/page-header";
+@import "./blocks/main-screen";
+@import "./blocks/features";
+@import "./blocks/services";
+@import "./blocks/about";
+@import "./blocks/contacts-block";
+@import "./blocks/page-footer";

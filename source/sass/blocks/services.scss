@@ -1,0 +1,36 @@
+.services {
+    padding-bottom: 77px;
+
+    &__heading {
+        width: 740px;
+        margin: 0 auto;
+        margin-bottom: 78px;
+        text-align: center;
+    }
+
+    &__list {
+        @include ul_reset;
+        columns: 2;
+        gap: 70px;
+    }
+
+    &__item {
+        margin-bottom: 7px;
+        padding-left: 40px;
+        position: relative;
+
+        &::before {
+            @include pseudo;
+            width: 25px;
+            height: 25px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: $heading_font_color;
+        }
+
+        &:nth-child(2n)::before {
+            background-color: $alt_bg_color;
+        }
+    }
+}

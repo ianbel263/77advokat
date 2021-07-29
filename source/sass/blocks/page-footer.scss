@@ -1,0 +1,12 @@
+.page-footer {
+    padding: 54px 0 47px;
+    color: $alt_font_color;
+    background-color: $alt_bg_color;
+
+    &__top {
+        margin-bottom: 18px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}

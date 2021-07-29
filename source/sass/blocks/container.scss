@@ -1,4 +1,9 @@
 .container {
     max-width: $max_width;
     margin: 0 auto;
+
+    &__content {
+        width: $content_width;
+        margin: 0 auto;
+    }
 }

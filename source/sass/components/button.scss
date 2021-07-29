@@ -1,0 +1,27 @@
+.button {  
+    padding: 14px 40px;
+  
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    vertical-align: middle;
+    text-align: center;
+    word-break: break-all;
+    text-decoration: none;
+    
+    color: $alt_font_color;
+    background-color: $heading_font_color;
+    border: none;
+    outline: none;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &:active {
+        opacity: 1;
+    }
+  }  

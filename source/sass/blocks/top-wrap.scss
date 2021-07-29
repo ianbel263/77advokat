@@ -1,0 +1,11 @@
+.top-wrap {
+  color: $alt_font_color;
+  background-color: $alt_bg_color;
+
+  &__container {
+    background: linear-gradient($transparent_bg_color),
+                url(../../img/bg_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+}

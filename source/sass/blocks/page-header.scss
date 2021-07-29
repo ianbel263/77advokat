@@ -1,0 +1,15 @@
+.page-header {
+    &__bottom {
+        margin-bottom: 160px;
+        padding-top: 33px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

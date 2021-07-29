@@ -1,0 +1,28 @@
+.social {
+    &__heading {
+        margin: 0;
+        margin-bottom: 3px;
+        padding: 0;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 21px;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+    }
+
+    &__list {
+        @include ul_reset;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    &__item {
+        margin-right: 23px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+}

@@ -1,0 +1,48 @@
+.main-screen {
+    position: relative;
+    min-height: 640px;
+
+    &__heading-h1,
+    &__heading-h2,
+    &__text {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__img {
+        img {
+            display: block;
+        }
+
+        position: absolute;
+        right: -35px;
+        bottom: 0;
+    }
+
+    &__heading-h1 {
+        margin-bottom: 9px;
+    }
+
+    &__heading-h2 {
+        margin-bottom: 38px;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 54px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+    }
+
+    &__details {
+        margin-bottom: 72px;
+    }
+
+    &__text {
+        font-size: 26px;
+        line-height: 40px;
+        letter-spacing: 0.03em;
+    }
+
+    &__button {
+        width: 300px;
+    }
+}
