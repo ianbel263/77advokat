@@ -74,4 +74,9 @@
             background-image: url(../../img/icons/phone.svg);
         }
     }
+
+    @include mobile {
+        font-size: 11px;
+        line-height: 15px;
+    }
 }

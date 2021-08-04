@@ -45,4 +45,42 @@
     &__button {
         width: 300px;
     }
+
+    @include mobile {
+        min-height: 297px;
+        overflow: hidden;
+
+        &__heading-h1 {
+            margin-bottom: 11px;
+            width: 67%;
+        }
+
+        &__heading-h2 {
+            margin-bottom: 18px;
+            font-size: 20px;
+            line-height: 27px;
+        }
+
+        &__details {
+            margin-bottom: 21px;
+        }
+
+        &__text {
+            font-size: 12px;
+            line-height: 19px;
+            letter-spacing: 0.01em;
+        }
+
+        &__img {
+            width: 278px;
+            right: -10px;
+            bottom: -5px;
+        }
+
+        &__button {
+            width: 156px;
+            height: 36px;
+            padding: 0;
+        }
+    }
 }

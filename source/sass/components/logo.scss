@@ -1,0 +1,22 @@
+.logo {
+    width: 243px;
+    height: 54px;
+
+    img {
+        display: block;
+    }
+
+    &--footer {
+        display: flex;
+    }
+
+    @include mobile {
+        width: 163px;
+        height: 36px;
+
+        &--footer {
+            width: 145px;
+            height: 32px;
+        }
+    }
+}

@@ -23,6 +23,44 @@
         &:last-child {
             margin-right: 0;
         }
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &:active {
+            opacity: 1;
+        }
     }
 
+    &__icon {
+        &--vk {
+            width: 47px;
+            height: 26px;
+        }
+
+        &--fb {
+            width: 17px;
+            height: 32px;
+        }
+    }
+
+    @include mobile {
+        &__heading {
+            font-size: 11px;
+            line-height: 15px;
+        }
+
+        &__icon {
+            &--vk {
+                width: 27px;
+                height: 15px;
+            }
+    
+            &--fb {
+                width: 10px;
+                height: 18px;
+            }
+        }    
+    }
 }

@@ -2,10 +2,62 @@
   color: $alt_font_color;
   background-color: $alt_bg_color;
 
+  &__button {
+    width: 22px;
+    height: 22px;
+    padding: 0;
+    position: relative;
+    display: none;
+
+    &::after {
+      @include pseudo;
+      width: 14px;
+      height: 2px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $alt_bg_color;
+      box-shadow: 0 -4px $alt_bg_color, 0 4px $alt_bg_color;
+    }
+  }
+
   &__container {
-    background: linear-gradient($transparent_bg_color),
+    background-image: linear-gradient($alt_bg_color),
+                linear-gradient($transparent_bg_color),
                 url(../../img/bg_1.jpg);
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-size: 100% 123px, 100%, cover;
+    background-position: center top, center center, center bottom;
+
+    @media (min-resolution: $retina_dpi), (min-resolution: $retina_dppx) {
+      background-image: linear-gradient($alt_bg_color),
+                  linear-gradient($transparent_bg_color),
+                  url(../../img/bg_1@2x.jpg);
+    }
+  }
+
+  @include mobile {
+    position: relative;
+
+    &__button {
+      position: absolute;
+      top: 22px;
+      right: 8px;
+      display: block;
+    }
+
+    &__container {
+      padding-top: 51px;
+
+      background-image: linear-gradient($transparent_bg_color),
+                        url(../../img/bg_m_1.jpg);
+      background-size: 100%, cover;
+      background-position: center center, center bottom;
+
+      @media (min-resolution: $retina_dpi), (min-resolution: $retina_dppx) {
+      background-image: linear-gradient($transparent_bg_color),
+                        url(../../img/bg_m_1@2x.jpg);
+      }
+    }
   }
 }

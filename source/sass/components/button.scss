@@ -24,4 +24,9 @@
     &:active {
         opacity: 1;
     }
+
+    @include mobile {
+        font-size: 14px;
+        line-height: 22px;   
+    }
   }  

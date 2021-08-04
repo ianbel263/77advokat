@@ -6,4 +6,12 @@
         width: $content_width;
         margin: 0 auto;
     }
+
+    @include mobile {
+        &__content {
+            width: 100%;
+            padding-left: 2.3%;
+            padding-right: 2.3%;
+        }
+    }
 }

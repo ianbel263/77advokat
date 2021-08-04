@@ -13,6 +13,11 @@ body {
   line-height: 39px;
   letter-spacing: 0.03em;
   font-weight: 400;
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 22px;     
+  }
 }
 
 a {

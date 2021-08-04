@@ -1,7 +1,6 @@
 .features {
     width: 973px;
     margin-top: -65px;
-    margin-bottom: 106px;
     position: relative;
 
     font-size: 22px;
@@ -48,6 +47,35 @@
 
         &--financial::before {
             background-image: url(../../img/icons/guarantee_3.svg);
+        }
+    }
+
+    @include mobile {
+        margin-top: 0;
+        width: 100%;
+
+        font-size: 10px;
+        line-height: 16px;
+
+        &__list {
+            min-height: 70px;
+        }
+
+        &__item {
+            padding: 45px 2px 9px;
+            width: 32%;
+
+            &:nth-child(2) {
+                width: 34%;
+                flex-grow: 1;
+            }
+
+            &::before {
+                height: 33px;
+                top: 9px;
+                bottom: auto;
+                background-size: contain;
+            }
         }
     }
 }

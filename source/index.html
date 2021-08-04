@@ -17,7 +17,7 @@
   
   <div class="wrapper">
     <div class="wrapper__content">
-      <div class="top-wrap">
+      <div class="top-wrap" id="page_top">
         <div class="top-wrap__container container">
           <header class="page-header container__content">
             <ul class="page-header__top contacts">
@@ -42,14 +42,15 @@
               </div>
               <nav class="page-header__menu menu">
                 <ul class="menu__list">
-                  <li class="menu__item"><a href="#">Услуги</a></li>
-                  <li class="menu__item"><a href="#">Об адвокате</a></li>
-                  <li class="menu__item"><a href="#">Контакты</a></li>
+                  <li class="menu__item"><a href="#services">Услуги</a></li>
+                  <li class="menu__item"><a href="#about">Об адвокате</a></li>
+                  <li class="menu__item"><a href="#contacts">Контакты</a></li>
                   <li class="menu__item"><a href="#">Запись на прием</a></li>
                 </ul>
               </nav>
             </div>
           </header>
+          <button class="top-wrap__button button" aria-label="Открыть меню"></button>
           <section class="main-screen container__content">
             <div class="main-screen__info">
               <h1 class="main-screen__heading-h1 heading heading--h1">Беляев Андрей Ильич</h1>
@@ -62,8 +63,7 @@
             </div>
             <div class="main-screen__img">
               <picture>
-                <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x"> -->
-                <source media="(max-width: 768px)" srcset="img/photo_m_1.png 1x, img/photo_m_1@2x.png 2x">
+                <source media="(max-width: 767px)" srcset="img/photo_m_1.png 1x, img/photo_m_1@2x.png 2x">
                 <img width="562" height="740" src="img/photo_1.png" srcset="img/photo_1@2x.png 2x" alt="Фотография адвоката Беляева А.И.">
               </picture>
             </div>
@@ -80,7 +80,7 @@
             <li class="features__item features__item--financial">Финансовые гарантии</li>
           </ul>
         </section>
-        <section class="services container">
+        <section class="services container" id="services">
           <div class="container__content">
             <h2 class="services__heading heading heading--h2">Виды юридическое помощи, которые Вы можете получить:</h2>
             <ul class="services__list">
@@ -94,19 +94,24 @@
             </ul>
           </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
           <div class="about__container container">
             <div class="about__wrap container__content">
               <div class="about__img">
                 <picture>
-                  <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x"> -->
-                  <source media="(max-width: 768px)" srcset="img/photo_m_1.png 1x, img/photo_m_1@2x.png 2x">
+                  <source media="(max-width: 767px)" srcset="img/photo_m_2.png 1x, img/photo_m_2@2x.png 2x">
                   <img width="425" height="500" src="img/photo_2.png" srcset="img/photo_2@2x.png 2x" alt="Фотография адвоката Беляева А.И.">
                 </picture>
               </div>
               <div class="about__info">
                 <h2 class="about__heading heading heading--h2">Обо мне:</h2>
                 <p class="about__name">Беляев Андрей Ильич</p>
+                <div class="about__img about__img--mobile">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="img/photo_m_2.png 1x, img/photo_m_2@2x.png 2x">
+                    <img width="425" height="500" src="img/photo_2.png" srcset="img/photo_2@2x.png 2x" alt="Фотография адвоката Беляева А.И.">
+                  </picture>
+                </div>  
                 <ul class="about__list">
                   <li class="about__item">В 2001 году закончил прокурорско-следственный факультет Военного университета Министерства обороны РФ</li>
                   <li class="about__item">C 2001 по 2004 годы - служба в органах военной прокуратуры</li>
@@ -118,7 +123,7 @@
             </div>
           </div>
         </section>
-        <section class="contacts-block container">
+        <section class="contacts-block container" id="contacts">
           <div class="contacts-block__wrap container__content">
             <div class="contacts-block__info">
               <h2 class="contacts-block__heading heading heading--h2">Контакты:</h2>
@@ -145,14 +150,16 @@
     <footer class="page-footer wrapper__footer">
       <div class="page-footer__container container">
         <div class="page-footer__top container__content">
-          <div class="page-footer__logo logo">
-            <img width="243" height="54" src="img/logo.svg" alt="Лого">
+          <div class="page-footer__logo logo logo--footer">
+            <a href="#page_top">
+              <img width="243" height="54" src="img/logo.svg" alt="Лого">
+            </a>
           </div>
           <nav class="page-footer__menu menu menu--footer">
             <ul class="menu__list menu__list--footer">
-              <li class="menu__item menu__item--footer"><a href="#">Услуги</a></li>
-              <li class="menu__item menu__item--footer"><a href="#">Об адвокате</a></li>
-              <li class="menu__item menu__item--footer"><a href="#">Контакты</a></li>
+              <li class="menu__item menu__item--footer"><a href="#services">Услуги</a></li>
+              <li class="menu__item menu__item--footer"><a href="#about">Об адвокате</a></li>
+              <li class="menu__item menu__item--footer"><a href="#contacts">Контакты</a></li>
               <li class="menu__item menu__item--footer"><a href="#">Запись на прием</a></li>
             </ul>
           </nav>
@@ -161,14 +168,14 @@
             <ul class="social__list">
               <li class="social__item">
                 <a href="#" aria-label="Моя страница в Контакте">
-                  <svg class="social__icon" width="47" height="26">
+                  <svg class="social__icon social__icon--vk" width="47" height="26">
                     <use xlink:href="#spr_vk"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a href="#" aria-label="Моя страница на Фейсбук">
-                  <svg class="social__icon" width="17" height="32">
+                <a href="https://www.facebook.com/advokatbelyaev" aria-label="Моя страница на Фейсбук">
+                  <svg class="social__icon social__icon--fb" width="17" height="32">
                     <use xlink:href="#spr_facebook"></use>
                   </svg>
                 </a>

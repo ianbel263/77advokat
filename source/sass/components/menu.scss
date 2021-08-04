@@ -53,4 +53,17 @@
         margin-left: 150px;
         margin-top: -3px;
     }
+
+    @include mobile {
+        font-size: 14px;
+        line-height: 22px;
+
+        &--footer {
+            display: none;
+        }
+
+        &--hidden {
+            display: none;
+        }
+    }
 }

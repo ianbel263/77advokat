@@ -1,4 +1,5 @@
 .services {
+    padding-top: 106px;
     padding-bottom: 77px;
 
     &__heading {
@@ -19,6 +20,10 @@
         padding-left: 40px;
         position: relative;
 
+        &:last-child {
+            margin-bottom: 0;
+        }
+
         &::before {
             @include pseudo;
             width: 25px;
@@ -31,6 +36,32 @@
 
         &:nth-child(2n)::before {
             background-color: $alt_bg_color;
+        }
+    }
+
+    @include mobile {
+        padding-top: 40px;
+        padding-bottom: 50px;
+        
+        &__heading {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        &__list {
+            padding-left: 45px;
+            padding-right: 45px;
+            columns: unset;
+        }
+
+        &__item {
+            margin-bottom: 14px;
+            padding-left: 23px;
+
+            &::before {
+                width: 13px;
+                height: 13px;
+            }
         }
     }
 }
