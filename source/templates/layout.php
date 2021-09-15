@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="Description" content="Адвокат Беляев Андрей Ильич - юридическая помощь гражданам и организациям">
-  <title>Адвокат Беляев Андрей Ильич - юридическая помощь гражданам и организациям</title>
+  <title><?= $sitename ?></title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
