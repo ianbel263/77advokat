@@ -16,8 +16,8 @@ var include = require("posthtml-include");
 const htmlmin = require('gulp-htmlmin');
 var del = require("del");
 var concat = require("gulp-concat");
+var terser = require("gulp-terser");
 // var uglify = require("gulp-uglify");
-// var terser = require("gulp-terser");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -37,6 +37,7 @@ gulp.task("css", function () {
 gulp.task("server", function () {
   server.init({
     server: "build/",
+    browser: "Google Chrome",
     notify: false,
     open: true,
     cors: true,
@@ -55,7 +56,7 @@ gulp.task("refresh", function (done) {
 
 gulp.task("js", function () {
   return gulp.src("source/js/*.js")
-    // .pipe(terser())
+    .pipe(terser())
     .pipe(plumber())
     .pipe(concat("main.js"))
     // .pipe(gulp.dest("build/js"))
