@@ -10,7 +10,7 @@
         align-items: flex-start;
     }
 
-    @include mobile {
+    @include tablet {
         padding: 25px 0 26px;
 
         &__top {

@@ -14,10 +14,11 @@
         width: 100%;
         min-height: 180px;
         display: flex;
+        justify-content: space-between;
     }
 
     &__item {
-        width: 33%;
+        width: 33.3%;
         padding: 24px;
         padding-top: 117px;
         position: relative;
@@ -50,15 +51,16 @@
         }
     }
 
-    @include mobile {
-        margin-top: 0;
+    @include tablet {
         width: 100%;
+        margin-top: 0;
 
         font-size: 10px;
         line-height: 16px;
 
         &__list {
             min-height: 70px;
+            margin: 0 auto;
         }
 
         &__item {

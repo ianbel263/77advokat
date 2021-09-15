@@ -45,7 +45,7 @@
         }
     }
 
-    @include mobile {
+    @include tablet {
         &__heading {
             font-size: 11px;
             line-height: 15px;

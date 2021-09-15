@@ -4,6 +4,7 @@ $alt_bg_color: #303030;
 $transparent_bg_color: rgba(39, 39, 39, 0.93);
 $transparent_bg_color_2: rgba(39, 39, 39, 0.95);
 $transparent_bg_color_3: rgba(48, 48, 48, 0.72);
+$transparent_bg_color_3: rgba(48, 48, 48, 0.97);
 $main_font_color: #181818;
 $alt_font_color: #ffffff;
 $heading_font_color: #cfac68;
@@ -17,13 +18,13 @@ $heading_font: 'Merriweather', Arial, sans-serif;
 // Значения ширины контента
 $max_width: 1920px;
 $content_width: 1040px;
-// $content_mobile_width: 375px;
 $max_width_desktop: 1200px;
 $only_desktop: 1024px;
 $max_width_tablet: 1023px;
-$min_width_mobile: 320px;
+$min_width_mobile: 375px;
 $max_width_mobile: 767px;
 $no_mobile_width: 768px;
+$mobile_breakpoint: 550px;
 
 // Значения вьюпортов
 $width_viewport_desktop: 1024px;

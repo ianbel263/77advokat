@@ -1,4 +1,5 @@
 'use strict';
+
 (function () {
   var NO_DESKTOP_WIDTH = 1023;
   var links = document.querySelectorAll('a[href*="#"]');
@@ -9,7 +10,7 @@
       if (arr[a].getAttribute('href').length > 1) {
         anchors.push(arr[a]);
       }
-    }
+   }
     return anchors;
   };
 

@@ -1,4 +1,7 @@
-.button {  
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 14px 40px;
   
     font-weight: 600;
@@ -25,7 +28,7 @@
         opacity: 1;
     }
 
-    @include mobile {
+    @include tablet {
         font-size: 14px;
         line-height: 22px;   
     }

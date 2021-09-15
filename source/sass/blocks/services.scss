@@ -39,18 +39,19 @@
         }
     }
 
-    @include mobile {
+    @include tablet {
         padding-top: 40px;
         padding-bottom: 50px;
         
         &__heading {
             width: 100%;
+            max-width: 470px;
             margin-bottom: 20px;
         }
 
         &__list {
-            padding-left: 45px;
-            padding-right: 45px;
+            padding-left: 36px;
+            padding-right: 36px;
             columns: unset;
         }
 

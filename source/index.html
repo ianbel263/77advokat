@@ -19,13 +19,16 @@
     <div class="wrapper__content">
       <div class="top-wrap" id="page_top">
         <div class="top-wrap__container container">
-          <header class="page-header container__content">
+          <header class="page-header page-header--hidden page-header--closed container__content container__content--header">
+            <button class="page-header__button button button--close-menu" aria-label="Закрыть меню"></button>
             <ul class="page-header__top contacts">
               <li class="contacts__item">
-                <p class="contacts__text contacts__text--address">г.Москва, Рублевское шоссе, дом 12, корпус 1</p>
+                <address class="contacts__text contacts__text--address">
+                  <a href="yandexnavi://build_route_on_map?lat_to=55.761325&lon_to=37.734641">г.Москва, проспект Буденного, дом 30А</a>
+                </address>
               </li>
               <li class="contacts__item">
-                <p class="contacts__text contacts__text--time">Пн-Пт с 10:00 до 18:00<br>только по предварительной записи</p>
+                <p class="contacts__text contacts__text--time">Пн-Пт с 10:00 до 19:00<br>только по предварительной записи</p>
               </li>
               <li class="contacts__item">
                 <p class="contacts__text contacts__text--mail">
@@ -45,13 +48,13 @@
                   <li class="menu__item"><a href="#services">Услуги</a></li>
                   <li class="menu__item"><a href="#about">Об адвокате</a></li>
                   <li class="menu__item"><a href="#contacts">Контакты</a></li>
-                  <li class="menu__item"><a href="#">Запись на прием</a></li>
+                  <li class="menu__item"><a href="https://wa.me/79269959990/?text=Здравствуйте,%20хочу%20записаться%20к%20Вам%20на%20консультацию">Запись на прием</a></li>
                 </ul>
               </nav>
             </div>
           </header>
-          <button class="top-wrap__button button" aria-label="Открыть меню"></button>
-          <section class="main-screen container__content">
+          <button class="top-wrap__button button button--open-menu" aria-label="Открыть меню"></button>
+          <section class="main-screen container__content container__content--auto-padding">
             <div class="main-screen__info">
               <h1 class="main-screen__heading-h1 heading heading--h1">Беляев Андрей Ильич</h1>
               <h2 class="main-screen__heading-h2">Адвокат</h2>
@@ -59,11 +62,11 @@
                 <p class="main-screen__text">Более 16 лет успешной практики</p>
                 <p class="main-screen__text">Рег.номер в реестре 50/4844</p>
               </div>
-              <button class="main-screen__button button">Записаться</button>
+              <a href="https://wa.me/79269959990/?text=Здравствуйте,%20хочу%20записаться%20к%20Вам%20на%20консультацию" class="main-screen__button button">Записаться</a>
             </div>
             <div class="main-screen__img">
               <picture>
-                <source media="(max-width: 767px)" srcset="img/photo_m_1.png 1x, img/photo_m_1@2x.png 2x">
+                <source media="(max-width: 1023px)" srcset="img/photo_m_1.png 1x, img/photo_m_1@2x.png 2x">
                 <img width="562" height="740" src="img/photo_1.png" srcset="img/photo_1@2x.png 2x" alt="Фотография адвоката Беляева А.И.">
               </picture>
             </div>
@@ -81,7 +84,7 @@
           </ul>
         </section>
         <section class="services container" id="services">
-          <div class="container__content">
+          <div class="services__container container__content">
             <h2 class="services__heading heading heading--h2">Виды юридическое помощи, которые Вы можете получить:</h2>
             <ul class="services__list">
               <li class="services__item">Защита по уголовным делам</li>
@@ -115,7 +118,7 @@
                 <ul class="about__list">
                   <li class="about__item">В 2001 году закончил прокурорско-следственный факультет Военного университета Министерства обороны РФ</li>
                   <li class="about__item">C 2001 по 2004 годы - служба в органах военной прокуратуры</li>
-                  <li class="about__item">В январе 2005 года присвоен статус адвоката</li>
+                  <li class="about__item">В феврале 2005 года присвоен статус адвоката</li>
                   <li class="about__item">Являюсь членом Адвокатской палаты Московской области</li>
                   <li class="about__item">В ноябре 2019 года награжден почетной грамотой Федеральной палаты адвокатов РФ</li>
                 </ul>
@@ -128,8 +131,12 @@
             <div class="contacts-block__info">
               <h2 class="contacts-block__heading heading heading--h2">Контакты:</h2>
               <ul class="contacts-block__list">
-                <li class="contacts-block__item"><address><b>Адрес:</b> Москва, Рублевское шоссе, дом 12, корпус 1</address></li>
-                <li class="contacts-block__item"><b>Время работы: </b>Пн-Пт<br>с 09:00 до 21:00</li>
+                <li class="contacts-block__item contacts-block__item--link">
+                    <address>
+                      <b>Адрес: </b><a href="yandexnavi://build_route_on_map?lat_to=55.761325&lon_to=37.734641">город Москва,<br>проспект Буденного, дом&nbsp;30А</a>
+                  </address>
+                </li>
+                <li class="contacts-block__item"><b>Время работы: </b>Пн-Пт<br>с 10:00 до 19:00</li>
                 <li class="contacts-block__item contacts-block__item--link">
                   <b>Телефон: </b><a href="tel:+79269959990">+7 (926) 995-99-90</a>
                 </li>
@@ -137,21 +144,23 @@
                   <b>Email: </b><a href="mailto:mail@77advokat.ru">mail@77advokat.ru</a>
                 </li>
               </ul>
-              <p class="contacts-block__text">Прием в офисе только по предварительной записи!</p>
+              <p class="contacts-block__text">Прием только по предварительной записи!</p>
             </div>
             <div class="contacts-block__map">
-              <div id="yandex-map"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/?ll=37.445965%2C55.734967&mode=whatshere&utm_medium=mapframe&utm_source=maps&whatshere%5Bpoint%5D=37.438725%2C55.738749&whatshere%5Bzoom%5D=18&z=15.95" style="color:#eee;font-size:12px;position:absolute;top:14px;">Рублёвское шоссе, 12к1 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUii-vzoA" width="540" height="458" allowfullscreen="true" style="position:relative;"></iframe></div>
-              <img width="540" height="458" src="img/map.jpg" alt="Место нахождения адвоката Беляева А.И. на карте">
+              <div id="yandex-map">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Adf5823b921856d8609e1d2f83d795d1948f7798b12e54101f67fe4117ad2847f&amp;source=constructor" width="540" height="458" frameborder="0"></iframe>
+              </div>
+              <img width="540" height="458" src="img/map.jpeg" srcset="img/map@2x.jpeg" alt="Место нахождения адвоката Беляева А.И. на карте">
             </div>
           </div>
         </section>
       </main>
     </div>
     <footer class="page-footer wrapper__footer">
-      <div class="page-footer__container container">
-        <div class="page-footer__top container__content">
+      <div class="page-footer__container container container--auto-padding">
+        <div class="page-footer__top container__content container__content--auto-padding">
           <div class="page-footer__logo logo logo--footer">
-            <a href="#page_top">
+            <a href="#">
               <img width="243" height="54" src="img/logo.svg" alt="Лого">
             </a>
           </div>
@@ -160,7 +169,7 @@
               <li class="menu__item menu__item--footer"><a href="#services">Услуги</a></li>
               <li class="menu__item menu__item--footer"><a href="#about">Об адвокате</a></li>
               <li class="menu__item menu__item--footer"><a href="#contacts">Контакты</a></li>
-              <li class="menu__item menu__item--footer"><a href="#">Запись на прием</a></li>
+              <li class="menu__item menu__item--footer"><a href="https://wa.me/79269959990/?text=Здравствуйте,%20хочу%20записаться%20к%20Вам%20на%20консультацию">Запись на прием</a></li>
             </ul>
           </nav>
           <div class="page-footer__social social">
@@ -187,6 +196,7 @@
       </div>
     </footer>
   </div>
+  <div class="overlay"></div>
   <script src="js/main.js"></script>
 </body>
 </html>

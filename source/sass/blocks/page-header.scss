@@ -13,7 +13,91 @@
         align-items: center;
     }
 
-    @include mobile {
+    &__button {
+        width: 32px;
+        height: 32px;
+        padding: 0;
+        position: relative;
         display: none;
+        background-color: $alt_bg_color;
+        border: 1px solid $heading_font_color;
+        border-radius: 5px;
+
+        &::before,
+        &::after {
+            @include pseudo;
+            width: 22px;
+            height: 2px;
+            left: 50%;
+            top: 50%;
+            margin-left: -11px;
+            margin-top: -1px;
+            background-color: $heading_font_color;
+        }
+
+        &::before {
+            transform: rotate(-45deg);
+        }
+
+        &::after {
+            transform: rotate(45deg);
+        }
+      }
+
+    @include tablet {
+        width: 270px;
+        padding: 17px 12px 27px 39px;
+        
+        position: fixed;
+        top: 0;
+        right: 0;
+
+        overflow-y: scrollY;
+
+        display: flex;
+        flex-direction: column-reverse;
+        
+        z-index: 100;
+        
+        background-color: $transparent_bg_color_3;
+
+        &--hidden {
+            display: none;
+        }
+        
+        &--closed {
+            animation: close_menu 0.6s;
+        
+            will-change: transform;
+        }
+        
+        &--opened {
+            animation: open_menu 0.6s;
+        
+            will-change: transform;
+        }    
+
+        &__top,
+        &__bottom {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__bottom {
+            align-items: start;
+        }
+
+        &__logo {
+            margin-bottom: 38px;
+        }
+
+        &__button {
+            display: block;
+            position: absolute;
+            top: 20px;
+            right: 12px;
+        }
     }
 }

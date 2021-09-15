@@ -14,7 +14,7 @@ body {
   letter-spacing: 0.03em;
   font-weight: 400;
 
-  @include mobile {
+  @include tablet {
     font-size: 14px;
     line-height: 22px;     
   }
@@ -49,13 +49,8 @@ img {
   height: auto;
 }
 
-// .body_hidden {
-//   width: 100vw;
-//   overflow: hidden;
-// }
-
-// @include mobile {
-//   .body_hidden {
-//     position: fixed;
-//   }
-// }
+.body_hidden {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}

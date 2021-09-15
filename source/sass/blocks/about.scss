@@ -30,6 +30,7 @@
 
         display: flex;
         align-items: flex-end;
+        position: relative;
 
         background-image:   linear-gradient($transparent_bg_color_3),
                             url(../../img/bg_3.jpg);
@@ -41,10 +42,31 @@
             background-image: linear-gradient($transparent_bg_color_3),
                         url(../../img/bg_3@2x.jpg);
         }
+
+        &::before,
+        &::after {
+            @include pseudo;
+            background-color: $heading_font_color;
+        }
+
+        &::before {            
+            width: 15px;
+            height: 452px;
+
+            top: 61px;
+            right: -15px;
+        }
+
+        &::after {
+            width: 409px;
+            height: 13px;
+
+            left: 31px;
+            bottom: -13px;
+        }
                     
         img {
             display: block;
-            box-shadow: 20px 20px 0 0px $heading_font_color;
         }
 
         &--mobile {
@@ -97,7 +119,14 @@
         }
     }
 
-    @include mobile {
+    @media (min-width: $only_desktop) and (max-width: $max_width_desktop) {
+        &__info {
+            width: 49%;
+            font-size: 1.2rem;
+        }
+    }
+
+    @include tablet {
         &__container {
             padding-top: 48px;
             padding-bottom: 57px;
@@ -120,8 +149,8 @@
         }
 
         &__list {
-            max-width: 350px;
-            margin: 0 auto;
+            padding-left: 36px;
+            padding-right: 36px;
             line-height: 19px;
         }
 
@@ -159,11 +188,23 @@
             background-image: linear-gradient($transparent_bg_color_3),
                     url(../../img/bg_m_2@2x.jpg);
             }
-            
-            img {
-                box-shadow: 8px 8px 0 0px $heading_font_color;
-            }
 
+            &::before {            
+                width: 8px;
+                height: 241px;
+    
+                top: 34px;
+                right: -8px;
+            }
+    
+            &::after {
+                width: 223px;
+                height: 7px;
+    
+                left: 17px;
+                bottom: -2px;
+            }    
+            
             &--mobile {
                 display: block;
             }
@@ -171,8 +212,6 @@
 
         &__info {
             width: 100%;
-            padding-left: 56px;
-            padding-right: 11px;
         }
     }
 }

@@ -7,11 +7,38 @@
         margin: 0 auto;
     }
 
+    @media (min-width: $only_desktop) and (max-width: $max_width_desktop) {
+        &__content {
+            width: 100%;
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+    }
+
+    @include tablet {
+        &__content {
+            width: 100%;
+            max-width: 768px;
+            margin: 0 auto;
+
+            &--header {
+                width: auto;
+                max-width: none;
+                margin: 0;
+            }
+
+            &--auto-padding {
+                padding-left: calc(20% - 4.7rem);
+                padding-right: calc(20% - 4.7rem);
+            }
+        }
+    }
+
     @include mobile {
         &__content {
             width: 100%;
-            padding-left: 2.3%;
-            padding-right: 2.3%;
+            padding-left: 16px;
+            padding-right: 16px;
         }
     }
 }

@@ -1,4 +1,4 @@
-@keyframes open-modal {
+@keyframes open_menu {
   0% {
     transform: translateY(-25px);
     opacity: 0;
@@ -10,7 +10,7 @@
   }
 }
 
-@keyframes close-modal {
+@keyframes close_menu {
   0% {
     transform: translateY(0);
     opacity: 1;

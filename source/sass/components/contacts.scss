@@ -31,17 +31,20 @@
         padding: 0;
         padding-left: 40px;
         position: relative;
+        font-style: normal;
 
         &--mail {
             margin-bottom: 10px;
         }
 
+        &--address:hover a,
         &--mail a,
         &--phone a {
             padding-bottom: 3px;
             border-bottom: 1px solid transparent;    
         }
 
+        &--address:hover a,
         &--mail:hover a,
         &--phone:hover a {
             border-color: $heading_font_color;
@@ -75,8 +78,25 @@
         }
     }
 
-    @include mobile {
+    @include tablet {
+        min-height: none;
+        padding: 0;
+        align-items: start;
         font-size: 11px;
         line-height: 15px;
+
+        &__item {
+            width: auto !important;
+            margin: 0 !important;
+            margin-bottom: 10px !important;
+
+            &:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        &__text--mail {
+            margin-bottom: 20px;
+        }
     }
 }

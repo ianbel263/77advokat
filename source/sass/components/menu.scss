@@ -54,9 +54,23 @@
         margin-top: -3px;
     }
 
-    @include mobile {
+    @include tablet {
         font-size: 14px;
         line-height: 22px;
+
+        &__list {
+            margin-bottom: 25px;
+            flex-direction: column;
+        }
+
+        &__item {
+            margin: 0;
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
 
         &--footer {
             display: none;
