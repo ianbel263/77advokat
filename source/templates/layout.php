@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="Description" content="Адвокат Беляев Андрей Ильич - юридическая помощь гражданам и организациям">
-  <title><?= $sitename ?></title>
+  <title>Адвокат Беляев Андрей Ильич - юридическая помощь гражданам и организациям</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -59,7 +59,7 @@
               <h1 class="main-screen__heading-h1 heading heading--h1">Беляев Андрей Ильич</h1>
               <h2 class="main-screen__heading-h2">Адвокат</h2>
               <div class="main-screen__details">
-                <p class="main-screen__text">Более 16 лет успешной практики</p>
+                <p class="main-screen__text">Более <?= date("Y") - 2005; ?> лет успешной практики</p>
                 <p class="main-screen__text">Рег.номер в реестре 50/4844</p>
               </div>
               <a href="https://wa.me/79269959990/?text=Здравствуйте,%20хочу%20записаться%20к%20Вам%20на%20консультацию" class="main-screen__button button">Записаться</a>
@@ -88,11 +88,11 @@
             <h2 class="services__heading heading heading--h2">Виды юридической помощи, которые Вы можете получить:</h2>
             <ul class="services__list">
               <li class="services__item">Защита по уголовным делам</li>
-              <li class="services__item">Исследование материалов дела</li>
+              <li class="services__item">Изучение материалов дела</li>
               <li class="services__item">Подготовка процессуальных документов</li>
               <li class="services__item">Юридические консультации</li>
-              <li class="services__item">Судебная защита</li>
-              <li class="services__item">Разработка проектов договоров</li>
+              <li class="services__item">Представительство в судах по гражданским делам</li>
+              <li class="services__item">Договорная работа</li>
               <li class="services__item">Юридическое сопровождение бизнеса</li>
             </ul>
           </div>
@@ -192,7 +192,7 @@
             </ul>
           </div>
         </div>
-        <div class="page-footer__bottom container__content copyright">&copy; 2005-2021 Адвокат Беляев Андрей Ильич</div>
+        <div class="page-footer__bottom container__content copyright">&copy; 2005-<?= date("Y"); ?> Адвокат Беляев Андрей Ильич</div>
       </div>
     </footer>
   </div>

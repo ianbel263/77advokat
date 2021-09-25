@@ -2,7 +2,7 @@
 var gulp = require("gulp");
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
-var sass = require("gulp-sass");
+var sass = require("gulp-sass")(require('sass'));
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
@@ -92,17 +92,31 @@ gulp.task("sprite", function () {
     .pipe(gulp.dest("build/img"));
 });
 
+// gulp.task("html", function () {
+//   return gulp.src("source/*.html")
+//     .pipe(posthtml([
+//       include()
+//     ]))
+//     .pipe(htmlmin({
+//       collapseWhitespace: true,
+//       removeComments: true
+//     }))
+//     .pipe(gulp.dest("build"));
+// });
+
 gulp.task("html", function () {
-  return gulp.src("source/*.html")
+  return gulp.src("source/templates/*.php")
     .pipe(posthtml([
       include()
     ]))
     .pipe(htmlmin({
+      ignoreCustomFragments: [ /<\?= [\s\S]* \?>/ ],
       collapseWhitespace: true,
       removeComments: true
     }))
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("build/templates/"));
 });
+
 
 gulp.task("copy", function () {
   return gulp.src([

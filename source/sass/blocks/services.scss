@@ -29,8 +29,7 @@
             width: 25px;
             height: 25px;
             left: 0;
-            top: 50%;
-            transform: translateY(-50%);
+            top: 8px;
             background-color: $heading_font_color;
         }
 
@@ -62,6 +61,7 @@
             &::before {
                 width: 13px;
                 height: 13px;
+                top: 5px;
             }
         }
     }
