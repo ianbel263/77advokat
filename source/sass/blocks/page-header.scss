@@ -46,16 +46,18 @@
 
     @include tablet {
         width: 270px;
+        height: 100%;
         padding: 17px 12px 27px 39px;
         
         position: fixed;
         top: 0;
         right: 0;
 
-        overflow-y: scrollY;
+        overflow-x: hidden;
+        overflow-y: auto;
 
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         
         z-index: 100;
         
@@ -83,6 +85,10 @@
             padding: 0;
             display: flex;
             flex-direction: column;
+        }
+
+        &__top {
+            order: 1;
         }
 
         &__bottom {
